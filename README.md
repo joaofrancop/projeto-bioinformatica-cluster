@@ -10,7 +10,7 @@ O foco principal é a **metodologia não-subjetiva** para validar e escolher a m
 
 **O vídeo com a explicação completa da metodologia e dos resultados pode ser visto aqui:**
 
-[ >> COLOQUE O SEU LINK DO YOUTUBE OU GOOGLE DRIVE AQUI << ]
+https://drive.google.com/file/d/1WrbpN242MVsy2y9BiCSgoZ4eW3mL7lKS/view?usp=drive_link
 
 ---
 
