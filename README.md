@@ -10,7 +10,7 @@ O foco principal é a **metodologia não-subjetiva** para validar e escolher a m
 
 **O vídeo com a explicação completa da metodologia e dos resultados pode ser visto aqui:**
 
-https://drive.google.com/file/d/1WrbpN242MVsy2y9BiCSgoZ4eW3mL7lKS/view?usp=drive_link
+[https://drive.google.com/file/d/1WrbpN242MVsy2y9BiCSgoZ4eW3mL7lKS/view?usp=drive_link](https://drive.google.com/file/d/1WrbpN242MVsy2y9BiCSgoZ4eW3mL7lKS/view?usp=drive_link)
 
 ---
 
@@ -34,6 +34,10 @@ https://drive.google.com/file/d/1WrbpN242MVsy2y9BiCSgoZ4eW3mL7lKS/view?usp=drive
 
 ## 📄 Resultado da Execução
 
+<details>
+<summary>Clique para ver o log completo da execução</summary>
+
+```text
 ================================================================================
 INICIANDO ANÁLISE PARA O ARQUIVO: astral-scopedom-seqres-gd-sel-gs-bib-95-2.08.fa
 ================================================================================
@@ -58,29 +62,29 @@ INICIANDO ANÁLISE PARA O ARQUIVO: astral-scopedom-seqres-gd-sel-gs-bib-95-2.08.
   -> Rodando: DBSCAN (Base)...
 
 --- RESULTADOS DA AVALIAÇÃO BASELINE ---
-| Algoritmo             |   Nº Clusters |   Silhouette |   Davies-Bouldin |   V-Measure (Externo) |   Tempo (s) |
-|:----------------------|--------------:|-------------:|-----------------:|----------------------:|------------:|
-| MiniBatchKMeans (K=7) |             7 |  -0.00317315 |          5.46644 |              0.22427  |    0.143215 |
-| Birch (K=7)           |             7 |  -0.00589482 |          5.35167 |              0.22426  |   75.4981   |
-| KMeans (K=7)          |             7 |   0.0117725  |          5.36169 |              0.188603 |    1.4318   |
-| DBSCAN (Base)         |             0 |  -1          |        999       |              0        |    2.84153  |
+| Algoritmo             |    Nº Clusters |    Silhouette |    Davies-Bouldin |    V-Measure (Externo) |    Tempo (s) |
+|:----------------------|---------------:|--------------:|------------------:|-----------------------:|-------------:|
+| MiniBatchKMeans (K=7) |              7 |   -0.00317315 |           5.46644 |               0.22427  |     0.143215 |
+| Birch (K=7)           |              7 |   -0.00589482 |           5.35167 |               0.22426  |    75.4981   |
+| KMeans (K=7)          |              7 |    0.0117725  |           5.36169 |               0.188603 |     1.4318   |
+| DBSCAN (Base)         |              0 |   -1          |         999       |               0        |     2.84153  |
 
 ================================================================================
 ETAPA F: CORRELAÇÃO DE MÉTRICAS (A ESCOLHA NÃO-SUBJETIVA)
 ================================================================================
 
 --- Matriz de Correlação (Internas vs Externa) ---
-|                     |   Silhouette |   Davies-Bouldin |   V-Measure (Externo) |
-|:--------------------|-------------:|-----------------:|----------------------:|
-| Silhouette          |     1        |        -0.296571 |             -0.989679 |
-| Davies-Bouldin      |    -0.296571 |         1        |              0.430365 |
-| V-Measure (Externo) |    -0.989679 |         0.430365 |              1        |
+|                     |    Silhouette |    Davies-Bouldin |    V-Measure (Externo) |
+|:--------------------|--------------:|------------------:|-----------------------:|
+| Silhouette          |      1        |          -0.296571 |              -0.989679 |
+| Davies-Bouldin      |     -0.296571 |           1        |               0.430365 |
+| V-Measure (Externo) |     -0.989679 |           0.430365 |               1        |
 
 --- Correlação com a Métrica Externa (V-Measure) ---
-|                |   V-Measure (Externo) |
-|:---------------|----------------------:|
-| Silhouette     |             -0.989679 |
-| Davies-Bouldin |              0.430365 |
+|                |    V-Measure (Externo) |
+|:---------------|-----------------------:|
+| Silhouette     |              -0.989679 |
+| Davies-Bouldin |               0.430365 |
 
 --- CONCLUSÃO DA METODOLOGIA ---
 A métrica interna (não-supervisionada) mais confiável é: Silhouette
@@ -127,29 +131,29 @@ INICIANDO ANÁLISE PARA O ARQUIVO: astral-scopedom-seqres-gd-sel-gs-bib-40-2.08.
   -> Rodando: DBSCAN (Base)...
 
 --- RESULTADOS DA AVALIAÇÃO BASELINE ---
-| Algoritmo             |   Nº Clusters |   Silhouette |   Davies-Bouldin |   V-Measure (Externo) |   Tempo (s) |
-|:----------------------|--------------:|-------------:|-----------------:|----------------------:|------------:|
-| KMeans (K=7)          |             7 |  -0.0145484  |          6.39602 |              0.150725 |   0.169633  |
-| Birch (K=7)           |             7 |  -0.0195497  |          7.78718 |              0.144299 |  14.3475    |
-| MiniBatchKMeans (K=7) |             7 |  -0.00583201 |          6.87747 |              0.12874  |   0.0996928 |
-| DBSCAN (Base)         |             0 |  -1          |        999       |              0        |   0.555377  |
+| Algoritmo             |    Nº Clusters |    Silhouette |    Davies-Bouldin |    V-Measure (Externo) |    Tempo (s) |
+|:----------------------|---------------:|--------------:|------------------:|-----------------------:|-------------:|
+| KMeans (K=7)          |              7 |   -0.0145484  |           6.39602 |               0.150725 |     0.169633 |
+| Birch (K=7)           |              7 |   -0.0195497  |           7.78718 |               0.144299 |    14.3475   |
+| MiniBatchKMeans (K=7) |              7 |   -0.00583201 |           6.87747 |               0.12874  |     0.0996928|
+| DBSCAN (Base)         |              0 |   -1          |         999       |               0        |     0.555377 |
 
 ================================================================================
 ETAPA F: CORRELAÇÃO DE MÉTRICAS (A ESCOLHA NÃO-SUBJETIVA)
 ================================================================================
 
 --- Matriz de Correlação (Internas vs Externa) ---
-|                     |   Silhouette |   Davies-Bouldin |   V-Measure (Externo) |
-|:--------------------|-------------:|-----------------:|----------------------:|
-| Silhouette          |     1        |        -0.51789  |             -0.792011 |
-| Davies-Bouldin      |    -0.51789  |         1        |             -0.112083 |
-| V-Measure (Externo) |    -0.792011 |        -0.112083 |              1        |
+|                     |    Silhouette |    Davies-Bouldin |    V-Measure (Externo) |
+|:--------------------|--------------:|------------------:|-----------------------:|
+| Silhouette          |      1        |          -0.51789  |              -0.792011 |
+| Davies-Bouldin      |     -0.51789  |           1        |              -0.112083 |
+| V-Measure (Externo) |     -0.792011 |          -0.112083 |               1        |
 
 --- Correlação com a Métrica Externa (V-Measure) ---
-|                |   V-Measure (Externo) |
-|:---------------|----------------------:|
-| Silhouette     |             -0.792011 |
-| Davies-Bouldin |             -0.112083 |
+|                |    V-Measure (Externo) |
+|:---------------|-----------------------:|
+| Silhouette     |              -0.792011 |
+| Davies-Bouldin |              -0.112083 |
 
 --- CONCLUSÃO DA METODOLOGIA ---
 A métrica interna (não-supervisionada) mais confiável é: Silhouette
